@@ -1,0 +1,659 @@
+dealer open card:   6    |   player sum:   1    |   action: stick     |   reward:   1
+dealer sum:  -1    |   player sum:   1
+dealer got bust with sum -1
+
+dealer open card:   6    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   8    |   player sum:   9
+dealer sum:  11    |   player sum:   9
+dealer sum:  14    |   player sum:   9
+dealer sum:  16    |   player sum:   9
+dealer sum:  23    |   player sum:   9
+dealer got bust with sum 23
+
+dealer open card:   9    |   player sum:   4    |   action: stick     |   reward:  -1
+dealer sum:  10    |   player sum:   4
+dealer sum:   7    |   player sum:   4
+dealer sum:  12    |   player sum:   4
+dealer sum:  19    |   player sum:   4
+
+dealer open card:   9    |   player sum:   9    |   action: hit       |   reward:   0
+dealer open card:   9    |   player sum:   3    |   action: stick     |   reward:   1
+dealer sum:  13    |   player sum:   3
+dealer sum:   3    |   player sum:   3
+dealer sum:   9    |   player sum:   3
+dealer sum:   0    |   player sum:   3
+dealer got bust with sum 0
+
+dealer open card:   4    |   player sum:   5    |   action: hit       |   reward:   0
+dealer open card:   4    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:   9    |   player sum:   9
+dealer sum:  16    |   player sum:   9
+dealer sum:  18    |   player sum:   9
+
+dealer open card:   5    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:  12    |   player sum:   9
+dealer sum:  15    |   player sum:   9
+dealer sum:  12    |   player sum:   9
+dealer sum:  17    |   player sum:   9
+
+dealer open card:   4    |   player sum:   2    |   action: stick     |   reward:   1
+dealer sum:  -4    |   player sum:   2
+dealer got bust with sum -4
+
+dealer open card:   4    |   player sum:   3    |   action: stick     |   reward:  -1
+dealer sum:   9    |   player sum:   3
+dealer sum:   7    |   player sum:   3
+dealer sum:   5    |   player sum:   3
+dealer sum:  12    |   player sum:   3
+dealer sum:  20    |   player sum:   3
+
+dealer open card:   1    |   player sum:   1    |   action: stick     |   reward:  -1
+dealer sum:   5    |   player sum:   1
+dealer sum:   6    |   player sum:   1
+dealer sum:   8    |   player sum:   1
+dealer sum:  12    |   player sum:   1
+dealer sum:   6    |   player sum:   1
+dealer sum:  15    |   player sum:   1
+dealer sum:  19    |   player sum:   1
+
+dealer open card:  10    |   player sum:   5    |   action: stick     |   reward:   1
+dealer sum:   7    |   player sum:   5
+dealer sum:  11    |   player sum:   5
+dealer sum:   2    |   player sum:   5
+dealer sum:   3    |   player sum:   5
+dealer sum:  -4    |   player sum:   5
+dealer got bust with sum -4
+
+dealer open card:   9    |   player sum:   9    |   action: hit       |   reward:   0
+dealer open card:   9    |   player sum:   6    |   action: stick     |   reward:   1
+dealer sum:  13    |   player sum:   6
+dealer sum:  23    |   player sum:   6
+dealer got bust with sum 23
+
+dealer open card:   8    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:   6    |   player sum:   6
+dealer sum:   5    |   player sum:   6
+dealer sum:   7    |   player sum:   6
+dealer sum:  17    |   player sum:   6
+
+dealer open card:   2    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   6    |   player sum:   9
+dealer sum:  11    |   player sum:   9
+dealer sum:  15    |   player sum:   9
+dealer sum:  16    |   player sum:   9
+dealer sum:  24    |   player sum:   9
+dealer got bust with sum 24
+
+dealer open card:   5    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:   0    |   player sum:   7
+dealer got bust with sum 0
+
+dealer open card:   2    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:   5    |   player sum:   6
+dealer sum:   4    |   player sum:   6
+dealer sum:  12    |   player sum:   6
+dealer sum:  18    |   player sum:   6
+
+dealer open card:   7    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:   0    |   player sum:   7
+dealer got bust with sum 0
+
+dealer open card:   2    |   player sum:   4    |   action: stick     |   reward:   1
+dealer sum:   0    |   player sum:   4
+dealer got bust with sum 0
+
+dealer open card:   9    |   player sum:   6    |   action: stick     |   reward:   1
+dealer sum:   3    |   player sum:   6
+dealer sum:   5    |   player sum:   6
+dealer sum:  13    |   player sum:   6
+dealer sum:  15    |   player sum:   6
+dealer sum:   8    |   player sum:   6
+dealer sum:   4    |   player sum:   6
+dealer sum:  -1    |   player sum:   6
+dealer got bust with sum -1
+
+dealer open card:   9    |   player sum:   9    |   action: hit       |   reward:   0
+dealer open card:   9    |   player sum:   8    |   action: stick     |   reward:  -1
+dealer sum:  19    |   player sum:   8
+
+dealer open card:   2    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   4    |   player sum:   9
+dealer sum:  -4    |   player sum:   9
+dealer got bust with sum -4
+
+dealer open card:   5    |   player sum:  10    |   action: stick     |   reward:  -1
+dealer sum:   7    |   player sum:  10
+dealer sum:   9    |   player sum:  10
+dealer sum:  10    |   player sum:  10
+dealer sum:  12    |   player sum:  10
+dealer sum:  21    |   player sum:  10
+
+dealer open card:   9    |   player sum:   3    |   action: stick     |   reward:  -1
+dealer sum:   8    |   player sum:   3
+dealer sum:   9    |   player sum:   3
+dealer sum:  13    |   player sum:   3
+dealer sum:   4    |   player sum:   3
+dealer sum:   6    |   player sum:   3
+dealer sum:   9    |   player sum:   3
+dealer sum:  17    |   player sum:   3
+
+dealer open card:   6    |   player sum:   1    |   action: stick     |   reward:   1
+dealer sum:   7    |   player sum:   1
+dealer sum:   4    |   player sum:   1
+dealer sum:  -2    |   player sum:   1
+dealer got bust with sum -2
+
+dealer open card:   8    |   player sum:   1    |   action: hit       |   reward:  -1
+player got bust with sum -7
+dealer open card:   7    |   player sum:   4    |   action: stick     |   reward:   1
+dealer sum:   2    |   player sum:   4
+dealer sum:  -3    |   player sum:   4
+dealer got bust with sum -3
+
+dealer open card:   4    |   player sum:  10    |   action: stick     |   reward:   1
+dealer sum:  13    |   player sum:  10
+dealer sum:   8    |   player sum:  10
+dealer sum:  13    |   player sum:  10
+dealer sum:  11    |   player sum:  10
+dealer sum:   9    |   player sum:  10
+dealer sum:  16    |   player sum:  10
+dealer sum:  24    |   player sum:  10
+dealer got bust with sum 24
+
+dealer open card:   8    |   player sum:   2    |   action: stick     |   reward:  -1
+dealer sum:  18    |   player sum:   2
+
+dealer open card:   2    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:   1    |   player sum:   7
+dealer sum:  -9    |   player sum:   7
+dealer got bust with sum -9
+
+dealer open card:   2    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   4    |   player sum:   9
+dealer sum:  -1    |   player sum:   9
+dealer got bust with sum -1
+
+dealer open card:   6    |   player sum:   9    |   action: hit       |   reward:   0
+dealer open card:   6    |   player sum:  17    |   action: hit       |   reward:   0
+dealer open card:   6    |   player sum:  15    |   action: stick     |   reward:  -1
+dealer sum:   9    |   player sum:  15
+dealer sum:  10    |   player sum:  15
+dealer sum:  11    |   player sum:  15
+dealer sum:  20    |   player sum:  15
+
+dealer open card:   2    |   player sum:   8    |   action: stick     |   reward:  -1
+dealer sum:   3    |   player sum:   8
+dealer sum:  13    |   player sum:   8
+dealer sum:  15    |   player sum:   8
+dealer sum:  21    |   player sum:   8
+
+dealer open card:   4    |   player sum:   3    |   action: stick     |   reward:   1
+dealer sum:  13    |   player sum:   3
+dealer sum:  10    |   player sum:   3
+dealer sum:   8    |   player sum:   3
+dealer sum:   6    |   player sum:   3
+dealer sum:   9    |   player sum:   3
+dealer sum:  11    |   player sum:   3
+dealer sum:   4    |   player sum:   3
+dealer sum:  14    |   player sum:   3
+dealer sum:  24    |   player sum:   3
+dealer got bust with sum 24
+
+dealer open card:   4    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:   5    |   player sum:   7
+dealer sum:  10    |   player sum:   7
+dealer sum:   0    |   player sum:   7
+dealer got bust with sum 0
+
+dealer open card:   8    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   7    |   player sum:   9
+dealer sum:  16    |   player sum:   9
+dealer sum:  24    |   player sum:   9
+dealer got bust with sum 24
+
+dealer open card:   4    |   player sum:   8    |   action: stick     |   reward:  -1
+dealer sum:   6    |   player sum:   8
+dealer sum:  10    |   player sum:   8
+dealer sum:   2    |   player sum:   8
+dealer sum:  10    |   player sum:   8
+dealer sum:  15    |   player sum:   8
+dealer sum:  17    |   player sum:   8
+
+dealer open card:   3    |   player sum:   7    |   action: stick     |   reward:  -1
+dealer sum:   5    |   player sum:   7
+dealer sum:   6    |   player sum:   7
+dealer sum:  14    |   player sum:   7
+dealer sum:  10    |   player sum:   7
+dealer sum:   5    |   player sum:   7
+dealer sum:  13    |   player sum:   7
+dealer sum:  16    |   player sum:   7
+dealer sum:  19    |   player sum:   7
+
+dealer open card:   5    |   player sum:   4    |   action: stick     |   reward:   1
+dealer sum:   7    |   player sum:   4
+dealer sum:  12    |   player sum:   4
+dealer sum:   7    |   player sum:   4
+dealer sum:  12    |   player sum:   4
+dealer sum:   9    |   player sum:   4
+dealer sum:   2    |   player sum:   4
+dealer sum:   8    |   player sum:   4
+dealer sum:  16    |   player sum:   4
+dealer sum:  23    |   player sum:   4
+dealer got bust with sum 23
+
+dealer open card:  10    |   player sum:   4    |   action: hit       |   reward:   0
+dealer open card:  10    |   player sum:   2    |   action: stick     |   reward:   1
+dealer sum:   0    |   player sum:   2
+dealer got bust with sum 0
+
+dealer open card:   6    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:   4    |   player sum:   9
+dealer sum:  12    |   player sum:   9
+dealer sum:  20    |   player sum:   9
+
+dealer open card:   6    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:  -4    |   player sum:   7
+dealer got bust with sum -4
+
+dealer open card:   2    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:   8    |   player sum:   7
+dealer sum:  11    |   player sum:   7
+dealer sum:  15    |   player sum:   7
+dealer sum:  23    |   player sum:   7
+dealer got bust with sum 23
+
+dealer open card:   9    |   player sum:   5    |   action: stick     |   reward:  -1
+dealer sum:  10    |   player sum:   5
+dealer sum:   3    |   player sum:   5
+dealer sum:   7    |   player sum:   5
+dealer sum:   8    |   player sum:   5
+dealer sum:  11    |   player sum:   5
+dealer sum:  17    |   player sum:   5
+
+dealer open card:   7    |   player sum:   6    |   action: stick     |   reward:   1
+dealer sum:  14    |   player sum:   6
+dealer sum:  10    |   player sum:   6
+dealer sum:   4    |   player sum:   6
+dealer sum:  -3    |   player sum:   6
+dealer got bust with sum -3
+
+dealer open card:   3    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:   8    |   player sum:   9
+dealer sum:  12    |   player sum:   9
+dealer sum:  13    |   player sum:   9
+dealer sum:  17    |   player sum:   9
+
+dealer open card:   5    |   player sum:   4    |   action: stick     |   reward:  -1
+dealer sum:   3    |   player sum:   4
+dealer sum:  12    |   player sum:   4
+dealer sum:  19    |   player sum:   4
+
+dealer open card:   7    |   player sum:  10    |   action: hit       |   reward:   0
+dealer open card:   7    |   player sum:  15    |   action: hit       |   reward:   0
+dealer open card:   7    |   player sum:  20    |   action: stick     |   reward:   1
+dealer sum:  16    |   player sum:  20
+dealer sum:  18    |   player sum:  20
+
+dealer open card:   4    |   player sum:  10    |   action: stick     |   reward:  -1
+dealer sum:   7    |   player sum:  10
+dealer sum:  15    |   player sum:  10
+dealer sum:  19    |   player sum:  10
+
+dealer open card:   2    |   player sum:   3    |   action: stick     |   reward:  -1
+dealer sum:  11    |   player sum:   3
+dealer sum:   2    |   player sum:   3
+dealer sum:  11    |   player sum:   3
+dealer sum:  16    |   player sum:   3
+dealer sum:  21    |   player sum:   3
+
+dealer open card:   3    |   player sum:   6    |   action: stick     |   reward:   1
+dealer sum:  13    |   player sum:   6
+dealer sum:  22    |   player sum:   6
+dealer got bust with sum 22
+
+dealer open card:   7    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:   2    |   player sum:   9
+dealer sum:   4    |   player sum:   9
+dealer sum:   9    |   player sum:   9
+dealer sum:  13    |   player sum:   9
+dealer sum:   4    |   player sum:   9
+dealer sum:   5    |   player sum:   9
+dealer sum:   8    |   player sum:   9
+dealer sum:  11    |   player sum:   9
+dealer sum:  21    |   player sum:   9
+
+dealer open card:   8    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:  12    |   player sum:   9
+dealer sum:  17    |   player sum:   9
+
+dealer open card:   9    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:  13    |   player sum:   6
+dealer sum:  18    |   player sum:   6
+
+dealer open card:   6    |   player sum:   1    |   action: stick     |   reward:   1
+dealer sum:  -4    |   player sum:   1
+dealer got bust with sum -4
+
+dealer open card:   7    |   player sum:   4    |   action: stick     |   reward:  -1
+dealer sum:  10    |   player sum:   4
+dealer sum:  20    |   player sum:   4
+
+dealer open card:   8    |   player sum:   5    |   action: stick     |   reward:   1
+dealer sum:  11    |   player sum:   5
+dealer sum:  14    |   player sum:   5
+dealer sum:  12    |   player sum:   5
+dealer sum:   4    |   player sum:   5
+dealer sum:  -6    |   player sum:   5
+dealer got bust with sum -6
+
+dealer open card:   9    |   player sum:   8    |   action: stick     |   reward:  -1
+dealer sum:  10    |   player sum:   8
+dealer sum:   7    |   player sum:   8
+dealer sum:  14    |   player sum:   8
+dealer sum:  13    |   player sum:   8
+dealer sum:  18    |   player sum:   8
+
+dealer open card:   2    |   player sum:   3    |   action: stick     |   reward:  -1
+dealer sum:  11    |   player sum:   3
+dealer sum:   6    |   player sum:   3
+dealer sum:   5    |   player sum:   3
+dealer sum:   9    |   player sum:   3
+dealer sum:  18    |   player sum:   3
+
+dealer open card:   1    |   player sum:   4    |   action: stick     |   reward:   1
+dealer sum:   5    |   player sum:   4
+dealer sum:  11    |   player sum:   4
+dealer sum:  12    |   player sum:   4
+dealer sum:   7    |   player sum:   4
+dealer sum:  13    |   player sum:   4
+dealer sum:  14    |   player sum:   4
+dealer sum:   8    |   player sum:   4
+dealer sum:  15    |   player sum:   4
+dealer sum:  23    |   player sum:   4
+dealer got bust with sum 23
+
+dealer open card:  10    |   player sum:  10    |   action: hit       |   reward:   0
+dealer open card:  10    |   player sum:  12    |   action: stick     |   reward:  -1
+dealer sum:   4    |   player sum:  12
+dealer sum:   9    |   player sum:  12
+dealer sum:   2    |   player sum:  12
+dealer sum:   7    |   player sum:  12
+dealer sum:   8    |   player sum:  12
+dealer sum:  17    |   player sum:  12
+
+dealer open card:   4    |   player sum:   8    |   action: stick     |   reward:   1
+dealer sum:  10    |   player sum:   8
+dealer sum:  14    |   player sum:   8
+dealer sum:  16    |   player sum:   8
+dealer sum:  25    |   player sum:   8
+dealer got bust with sum 25
+
+dealer open card:   2    |   player sum:   6    |   action: stick     |   reward:   1
+dealer sum:  10    |   player sum:   6
+dealer sum:  13    |   player sum:   6
+dealer sum:  23    |   player sum:   6
+dealer got bust with sum 23
+
+dealer open card:   7    |   player sum:   8    |   action: stick     |   reward:   1
+dealer sum:  12    |   player sum:   8
+dealer sum:  22    |   player sum:   8
+dealer got bust with sum 22
+
+dealer open card:   4    |   player sum:   8    |   action: stick     |   reward:   1
+dealer sum:   1    |   player sum:   8
+dealer sum:   9    |   player sum:   8
+dealer sum:  11    |   player sum:   8
+dealer sum:   2    |   player sum:   8
+dealer sum:  -5    |   player sum:   8
+dealer got bust with sum -5
+
+dealer open card:   3    |   player sum:   1    |   action: stick     |   reward:  -1
+dealer sum:   6    |   player sum:   1
+dealer sum:  15    |   player sum:   1
+dealer sum:  19    |   player sum:   1
+
+dealer open card:   1    |   player sum:   2    |   action: stick     |   reward:   1
+dealer sum:   3    |   player sum:   2
+dealer sum:   4    |   player sum:   2
+dealer sum:  13    |   player sum:   2
+dealer sum:  23    |   player sum:   2
+dealer got bust with sum 23
+
+dealer open card:   2    |   player sum:   4    |   action: hit       |   reward:  -1
+player got bust with sum -4
+dealer open card:   5    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:   6    |   player sum:   6
+dealer sum:   7    |   player sum:   6
+dealer sum:  12    |   player sum:   6
+dealer sum:  11    |   player sum:   6
+dealer sum:   6    |   player sum:   6
+dealer sum:  10    |   player sum:   6
+dealer sum:   2    |   player sum:   6
+dealer sum:  12    |   player sum:   6
+dealer sum:   3    |   player sum:   6
+dealer sum:   4    |   player sum:   6
+dealer sum:  12    |   player sum:   6
+dealer sum:  10    |   player sum:   6
+dealer sum:   4    |   player sum:   6
+dealer sum:   7    |   player sum:   6
+dealer sum:  15    |   player sum:   6
+dealer sum:   8    |   player sum:   6
+dealer sum:  16    |   player sum:   6
+dealer sum:  15    |   player sum:   6
+dealer sum:  18    |   player sum:   6
+
+dealer open card:   4    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:  13    |   player sum:   6
+dealer sum:  19    |   player sum:   6
+
+dealer open card:   9    |   player sum:   2    |   action: stick     |   reward:   1
+dealer sum:  15    |   player sum:   2
+dealer sum:  23    |   player sum:   2
+dealer got bust with sum 23
+
+dealer open card:   4    |   player sum:   8    |   action: stick     |   reward:   1
+dealer sum:   5    |   player sum:   8
+dealer sum:   3    |   player sum:   8
+dealer sum:  -1    |   player sum:   8
+dealer got bust with sum -1
+
+dealer open card:   9    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:  18    |   player sum:   6
+
+dealer open card:   8    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   9    |   player sum:   9
+dealer sum:  15    |   player sum:   9
+dealer sum:  10    |   player sum:   9
+dealer sum:   4    |   player sum:   9
+dealer sum:  -3    |   player sum:   9
+dealer got bust with sum -3
+
+dealer open card:  10    |   player sum:   4    |   action: stick     |   reward:  -1
+dealer sum:  11    |   player sum:   4
+dealer sum:  10    |   player sum:   4
+dealer sum:  16    |   player sum:   4
+dealer sum:   7    |   player sum:   4
+dealer sum:  10    |   player sum:   4
+dealer sum:  20    |   player sum:   4
+
+dealer open card:   9    |   player sum:   9    |   action: hit       |   reward:   0
+dealer open card:   9    |   player sum:  10    |   action: hit       |   reward:   0
+dealer open card:   9    |   player sum:   4    |   action: stick     |   reward:  -1
+dealer sum:  12    |   player sum:   4
+dealer sum:   7    |   player sum:   4
+dealer sum:  17    |   player sum:   4
+
+dealer open card:   1    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:  11    |   player sum:   9
+dealer sum:  19    |   player sum:   9
+
+dealer open card:   4    |   player sum:   2    |   action: stick     |   reward:  -1
+dealer sum:  12    |   player sum:   2
+dealer sum:   6    |   player sum:   2
+dealer sum:   1    |   player sum:   2
+dealer sum:   4    |   player sum:   2
+dealer sum:  12    |   player sum:   2
+dealer sum:  19    |   player sum:   2
+
+dealer open card:   6    |   player sum:   7    |   action: stick     |   reward:  -1
+dealer sum:   1    |   player sum:   7
+dealer sum:   3    |   player sum:   7
+dealer sum:   6    |   player sum:   7
+dealer sum:  12    |   player sum:   7
+dealer sum:  11    |   player sum:   7
+dealer sum:  21    |   player sum:   7
+
+dealer open card:   8    |   player sum:   4    |   action: stick     |   reward:   1
+dealer sum:   1    |   player sum:   4
+dealer sum:  -7    |   player sum:   4
+dealer got bust with sum -7
+
+dealer open card:   9    |   player sum:   1    |   action: stick     |   reward:   1
+dealer sum:  -1    |   player sum:   1
+dealer got bust with sum -1
+
+dealer open card:   1    |   player sum:   2    |   action: stick     |   reward:  -1
+dealer sum:   3    |   player sum:   2
+dealer sum:   6    |   player sum:   2
+dealer sum:  14    |   player sum:   2
+dealer sum:  21    |   player sum:   2
+
+dealer open card:   6    |   player sum:   4    |   action: stick     |   reward:   1
+dealer sum:   9    |   player sum:   4
+dealer sum:  12    |   player sum:   4
+dealer sum:  22    |   player sum:   4
+dealer got bust with sum 22
+
+dealer open card:   7    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   5    |   player sum:   9
+dealer sum:  14    |   player sum:   9
+dealer sum:  10    |   player sum:   9
+dealer sum:  13    |   player sum:   9
+dealer sum:  14    |   player sum:   9
+dealer sum:  16    |   player sum:   9
+dealer sum:  23    |   player sum:   9
+dealer got bust with sum 23
+
+dealer open card:   8    |   player sum:   1    |   action: stick     |   reward:  -1
+dealer sum:  11    |   player sum:   1
+dealer sum:   8    |   player sum:   1
+dealer sum:  18    |   player sum:   1
+
+dealer open card:   3    |   player sum:   2    |   action: stick     |   reward:   1
+dealer sum:  -3    |   player sum:   2
+dealer got bust with sum -3
+
+dealer open card:   9    |   player sum:   7    |   action: stick     |   reward:  -1
+dealer sum:  17    |   player sum:   7
+
+dealer open card:  10    |   player sum:   3    |   action: stick     |   reward:   1
+dealer sum:  13    |   player sum:   3
+dealer sum:   4    |   player sum:   3
+dealer sum:   3    |   player sum:   3
+dealer sum:   8    |   player sum:   3
+dealer sum:   2    |   player sum:   3
+dealer sum:  -3    |   player sum:   3
+dealer got bust with sum -3
+
+dealer open card:   7    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:   8    |   player sum:   9
+dealer sum:  12    |   player sum:   9
+dealer sum:  11    |   player sum:   9
+dealer sum:   7    |   player sum:   9
+dealer sum:   6    |   player sum:   9
+dealer sum:  10    |   player sum:   9
+dealer sum:   3    |   player sum:   9
+dealer sum:  10    |   player sum:   9
+dealer sum:  16    |   player sum:   9
+dealer sum:  11    |   player sum:   9
+dealer sum:   5    |   player sum:   9
+dealer sum:  -2    |   player sum:   9
+dealer got bust with sum -2
+
+dealer open card:   4    |   player sum:   3    |   action: stick     |   reward:   1
+dealer sum:  -3    |   player sum:   3
+dealer got bust with sum -3
+
+dealer open card:   5    |   player sum:   6    |   action: stick     |   reward:   1
+dealer sum:   7    |   player sum:   6
+dealer sum:   3    |   player sum:   6
+dealer sum:   5    |   player sum:   6
+dealer sum:  10    |   player sum:   6
+dealer sum:  15    |   player sum:   6
+dealer sum:  24    |   player sum:   6
+dealer got bust with sum 24
+
+dealer open card:   5    |   player sum:   7    |   action: hit       |   reward:   0
+dealer open card:   5    |   player sum:   9    |   action: stick     |   reward:  -1
+dealer sum:  13    |   player sum:   9
+dealer sum:  20    |   player sum:   9
+
+dealer open card:   3    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:  -4    |   player sum:   9
+dealer got bust with sum -4
+
+dealer open card:   4    |   player sum:   3    |   action: stick     |   reward:   1
+dealer sum:   0    |   player sum:   3
+dealer got bust with sum 0
+
+dealer open card:   6    |   player sum:   5    |   action: stick     |   reward:  -1
+dealer sum:  11    |   player sum:   5
+dealer sum:  20    |   player sum:   5
+
+dealer open card:   6    |   player sum:   9    |   action: stick     |   reward:   1
+dealer sum:  -1    |   player sum:   9
+dealer got bust with sum -1
+
+dealer open card:   7    |   player sum:   1    |   action: stick     |   reward:   1
+dealer sum:   1    |   player sum:   1
+dealer sum:  -9    |   player sum:   1
+dealer got bust with sum -9
+
+dealer open card:  10    |   player sum:  10    |   action: hit       |   reward:   0
+dealer open card:  10    |   player sum:  12    |   action: stick     |   reward:   1
+dealer sum:  11    |   player sum:  12
+dealer sum:   2    |   player sum:  12
+dealer sum:  12    |   player sum:  12
+dealer sum:  16    |   player sum:  12
+dealer sum:   9    |   player sum:  12
+dealer sum:   0    |   player sum:  12
+dealer got bust with sum 0
+
+dealer open card:   4    |   player sum:   5    |   action: stick     |   reward:   1
+dealer sum:  -2    |   player sum:   5
+dealer got bust with sum -2
+
+dealer open card:   5    |   player sum:   6    |   action: stick     |   reward:  -1
+dealer sum:   4    |   player sum:   6
+dealer sum:  12    |   player sum:   6
+dealer sum:  15    |   player sum:   6
+dealer sum:  21    |   player sum:   6
+
+dealer open card:   5    |   player sum:   1    |   action: stick     |   reward:  -1
+dealer sum:   6    |   player sum:   1
+dealer sum:   8    |   player sum:   1
+dealer sum:   5    |   player sum:   1
+dealer sum:   7    |   player sum:   1
+dealer sum:  13    |   player sum:   1
+dealer sum:   9    |   player sum:   1
+dealer sum:   4    |   player sum:   1
+dealer sum:  11    |   player sum:   1
+dealer sum:  17    |   player sum:   1
+
+dealer open card:   5    |   player sum:   7    |   action: stick     |   reward:   1
+dealer sum:  12    |   player sum:   7
+dealer sum:   3    |   player sum:   7
+dealer sum:  12    |   player sum:   7
+dealer sum:  14    |   player sum:   7
+dealer sum:  10    |   player sum:   7
+dealer sum:  16    |   player sum:   7
+dealer sum:  22    |   player sum:   7
+dealer got bust with sum 22
+
+dealer open card:  10    |   player sum:  10    |   action: hit       |   reward:   0
+dealer open card:  10    |   player sum:   8    |   action: stick     |   reward:  -1
+dealer sum:  18    |   player sum:   8
+
+player won 51160 games
+player lost 48609 games
+231 games ended with a tie
