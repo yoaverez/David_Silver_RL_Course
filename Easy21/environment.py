@@ -1,5 +1,6 @@
 import random
 
+
 class Easy21:
 
     def __init__(self):
@@ -36,6 +37,18 @@ class Easy21:
             reward = -1
         return (dealer_open_card, player_sum), reward, log_str + '\n'
 
+    @staticmethod
+    def dealer_fake_turn(state):
+        dealer_open_card, player_sum = state
+        dealer_sum = 17
+        log_str = f"dealer sum: {dealer_sum:3} {' ':3}{'|':3} player sum: {player_sum:3}\n"
+        if dealer_sum > player_sum:
+            return state, -1, log_str
+        elif dealer_sum < player_sum:
+            return state, 1, log_str
+        else:
+            return state, 0, log_str
+
     def step(self, state, action: str):
         log_str = ''
         if self.done:
@@ -58,6 +71,7 @@ class Easy21:
             self.done = True
             # dealer turn
             return self.dealer_turn(state=(dealer_open_card, player_sum))  # next state, reward, log_str
+            # return self.dealer_fake_turn(state=(dealer_open_card, player_sum))  # next state, reward, log_str
 
     def reset(self):
         player_sum = random.randint(1, 10)
