@@ -63,7 +63,7 @@ class MCControlAgent:
                 new_state, reward, log_str = self.env.step(state, action)
                 returns.append((state, int_action, reward))
 
-                if self.log:
+                if self.log and episodes - episode <= 100:
                     with open(self.log_path, 'a', newline='\n') as f:
                         s = f"dealer open card: {state[0]:3} {' ':3}{'|':3} player sum: {state[1]:3} {' ':3}{'|':3} " \
                             f"action: {action:6} {' ':3}{'|':3} reward: {reward:3}\n"
@@ -86,47 +86,10 @@ class MCControlAgent:
                 count_loss +=1
             else:
                 count_tie += 1
-            if self.log:
-                with open(self.log_path, 'a', newline='\n') as f:
-                    f.write(f"player won {count_wins} games\n"
-                            f"player lost {count_loss} games\n"
-                            f"{count_tie} games ended with a tie\n")
+        if self.log:
+            with open(self.log_path, 'a', newline='\n') as f:
+                f.write(f"player won {count_wins} games\n"
+                        f"player lost {count_loss} games\n"
+                        f"{count_tie} games ended with a tie\n")
 
         print(self.Q)
-
-    def plot_frame(self, ax):
-
-
-        X = np.arange(0, 10, 1)
-        Y = np.arange(0, 21, 1)
-        X, Y = np.meshgrid(X, Y)
-        Z = self.calc_value_func_from_action_value_func(self.Q)[1:, 1:].transpose()
-
-        surf = ax.plot_surface(X, Y, Z, cmap=cm.bwr, antialiased=False)
-        return surf
-
-
-#%% Train and generate the value function
-import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
-import matplotlib.cm as cm
-import os
-
-
-episodes = 1000*1000
-log_path = os.path.join("logs", f"{int(episodes/1000)}K_episodes.txt")
-agent = MCControlAgent(log_path=log_path)
-agent.train_agent(episodes=episodes)
-
-fig = plt.figure()
-ax = fig.add_subplot(111,projection ='3d')
-agent.plot_frame(ax)
-plt.title('value function after 1M episodes yoav')
-ax.set_xlabel('Dealer showing')
-ax.set_ylabel('Player sum')
-ax.set_zlabel('V(s)')
-ax.set_xticks(range(1, 10+1))
-ax.set_yticks(range(1, 21+1))
-# plt.legend()
-plt.show()
-plt.savefig('Value function_50k.png')
