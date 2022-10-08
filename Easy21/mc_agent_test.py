@@ -50,10 +50,15 @@ def plot_3D(x, y, z, title, xlabel='Dealer showing', ylabel='Player sum', zlabel
     plt.show()
 
 
-def plot_value_function(episodes=1000*1000):
+def plot_value_function(episodes=1000*1000, log=False):
     size = (1000*1000, 'M') if episodes >= 1e6 else (1000, 'K')
-    log_path = os.path.join("logs", f"{int(episodes/size[0])}{size[1]}_episodes.txt")
-    agent = MCControlAgent(log_path=log_path)
+    if log:
+        log_path = os.path.join("logs", f"{int(episodes / size[0])}{size[1]}_episodes.txt")
+        # log_path = os.path.join("logs", f"{int(episodes/size[0])}{size[1]}_episodes_dealer_sum_17.txt")
+        agent = MCControlAgent(log_path=log_path)
+    else:
+        agent = MCControlAgent()
+
     agent.train_agent(episodes=episodes)
 
     x = np.arange(0, 10, 1)
@@ -65,12 +70,15 @@ def plot_value_function(episodes=1000*1000):
     plot_3D(x, y, z, title=title)
 
 
-def plot_action_value_function(episodes=1000*1000):
+def plot_action_value_function(episodes=1000*1000, log=False):
     size = (1000*1000, 'M') if episodes >= 1e6 else (1000, 'K')
-    log_path = os.path.join("logs", f"{int(episodes/size[0])}{size[1]}_episodes.txt")
-    # log_path = os.path.join("logs", f"{int(episodes/size[0])}{size[1]}_episodes_dealer_sum_17.txt")
+    if log:
+        log_path = os.path.join("logs", f"{int(episodes / size[0])}{size[1]}_episodes.txt")
+        # log_path = os.path.join("logs", f"{int(episodes/size[0])}{size[1]}_episodes_dealer_sum_17.txt")
+        agent = MCControlAgent(log_path=log_path)
+    else:
+        agent = MCControlAgent()
 
-    agent = MCControlAgent(log_path=log_path)
     agent.train_agent(episodes=episodes)
 
     x = np.arange(0, 10, 1)
@@ -83,7 +91,7 @@ def plot_action_value_function(episodes=1000*1000):
 
 
 def main():
-    # plot_value_function(episodes=5*1000)
+    # plot_value_function(episodes=50*1000)
     plot_action_value_function(episodes=5*1000)
 
 
