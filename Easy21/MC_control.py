@@ -49,12 +49,13 @@ class MCControlAgent(Agent):
             if g_t > 0:
                 count_wins += 1
             elif g_t < 0:
-                count_loss +=1
+                count_loss += 1
             else:
                 count_tie += 1
 
             # saving if wanted:
             if check_point_idx < len(check_points) and episode == check_points[check_point_idx]:
+                check_point_idx += 1
                 size = (1000, 'K') if episode < 1e6 else (1000 * 1000, 'M')
                 save_path = save_format.replace("NUMBER", f"{int(episode / size[0])}{size[1]}")
                 np.save(save_path, self.Q)
