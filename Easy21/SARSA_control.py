@@ -80,7 +80,5 @@ class SarsaControlAgent(Agent):
                         f"player lost {count_loss} games\n"
                         f"{count_tie} games ended with a tie\n")
 
-        print(self.Q)
-
     def reset_eligibility_traces(self):
         self.eligibility_traces = np.zeros_like(self.N)

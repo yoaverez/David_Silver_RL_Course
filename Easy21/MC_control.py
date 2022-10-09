@@ -55,4 +55,3 @@ class MCControlAgent(Agent):
                         f"player lost {count_loss} games\n"
                         f"{count_tie} games ended with a tie\n")
 
-        print(self.Q)
