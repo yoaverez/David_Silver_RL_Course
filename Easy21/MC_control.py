@@ -9,8 +9,10 @@ class MCControlAgent(Agent):
     def __init__(self, N0=100, log_path='', **kwargs):
         super().__init__(N0, log_path)
 
-    def train_agent(self, episodes, **kwargs):
+    def train_agent(self, episodes, check_points=[], **kwargs):
         count_wins, count_loss, count_tie = 0, 0, 0
+        save_format = "NUMBER_episodes_LAMBDA.npy"
+        check_point_idx = 0
         if self.log:
             print(f"logging to {self.log_path}")
         for episode in range(1, episodes+1):
@@ -49,6 +51,13 @@ class MCControlAgent(Agent):
                 count_loss +=1
             else:
                 count_tie += 1
+
+            # saving if wanted:
+            if check_point_idx < len(check_points) and episode == check_points[check_point_idx]:
+                size = (1000, 'K') if episode < 1e6 else (1000 * 1000, 'M')
+                save_path = save_format.replace("NUMBER", f"{int(episode / size[0])}{size[1]}")
+                np.save(save_path, self.Q)
+
         if self.log:
             with open(self.log_path, 'a', newline='\n') as f:
                 f.write(f"player won {count_wins} games\n"

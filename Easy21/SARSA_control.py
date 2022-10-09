@@ -16,8 +16,10 @@ class SarsaControlAgent(Agent):
 
         self.eligibility_traces = np.zeros_like(self.N)
 
-    def train_agent(self, episodes, lambda_=0, **kwargs):
+    def train_agent(self, episodes, lambda_=0, check_points=[], **kwargs):
         count_wins, count_loss, count_tie = 0, 0, 0
+        save_format = "NUMBER_episodes_LAMBDA.npy"
+        check_point_idx = 0
         if self.log:
             print(f"logging to {self.log_path}")
         for episode in range(1, episodes+1):
@@ -46,14 +48,6 @@ class SarsaControlAgent(Agent):
                 alpha_t = 1 / self.N[i1, j1, int_action]
                 # update all the action-value function elements
                 # and all the eligibility_traces elements
-
-                # for i, rows in enumerate(self.eligibility_traces):
-                #     for j, cols in enumerate(rows):
-                #         for a, _ in enumerate(cols):
-                #             self.Q[i, j, a] += alpha_t*delta_t*self.eligibility_traces[i, j, a]
-                #             self.eligibility_traces[i, j, a] *= self.gamma * lambda_
-
-                # alternative more fast update
                 self.Q += alpha_t*delta_t*self.eligibility_traces
                 self.eligibility_traces *= self.gamma * lambda_
 
@@ -74,6 +68,14 @@ class SarsaControlAgent(Agent):
                 count_loss += 1
             else:
                 count_tie += 1
+
+            # saving if wanted:
+            if check_point_idx < len(check_points) and episode == check_points[check_point_idx]:
+                size = (1000, 'K') if episode < 1e6 else (1000*1000, 'M')
+                save_path = save_format.replace("NUMBER", f"{int(episode/size[0])}{size[1]}")
+                save_path = save_path.replace("LAMBDA", f"lambda_{lambda_:0.1f}")
+                np.save(save_path, self.Q)
+
         if self.log:
             with open(self.log_path, 'a', newline='\n') as f:
                 f.write(f"player won {count_wins} games\n"
