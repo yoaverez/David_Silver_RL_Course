@@ -13,6 +13,13 @@ class ActionSpace:
         self.actions_to_int = {"hit": 0, "stick": 1}
 
 
+# global constants
+ACTION_SPACE = ActionSpace()
+CARDS_NUM = 10
+LEGAL_SUM_FIELD = 21
+NUM_OF_ACTIONS = 2
+
+
 def plot_3D(x, y, z, title, xlabel='Dealer showing', ylabel='Player sum', zlabel='V(s)', titles=None,
             single_plot=True):
     ncols = 1 if z.ndim == 2 or single_plot else 2
