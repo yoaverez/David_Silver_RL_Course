@@ -1,52 +1,15 @@
-from environment import Easy21
-from utils import ActionSpace
+from agent import Agent
+from utils import *
 import numpy as np
 import random
 
-ACTION_SPACE = ActionSpace()
-CARDS_NUM = 10
-LEGAL_SUM_FIELD = 21
-NUM_OF_ACTIONS = 2
 
-
-class MCControlAgent:
+class MCControlAgent(Agent):
 
     def __init__(self, N0=100, log_path=''):
-        self.log = False if log_path == '' else True
-        self.log_path = log_path
-        if self.log:
-            with open(self.log_path, 'w', newline='\n') as f:
-                # clean file
-                pass
-        self.env = Easy21()
-        self.N0 = N0
-        self.N = np.zeros(shape=(CARDS_NUM + 1, LEGAL_SUM_FIELD + 1, NUM_OF_ACTIONS))  # (state, action)
-        self.Q = np.zeros_like(self.N)
+        super().__init__(N0, log_path)
 
-    @staticmethod
-    def calc_value_func_from_action_value_func(Q):
-        n_d1, n_d2, n_d3 = Q.shape
-        V = np.amax(Q, axis=2)
-        # sanity check:
-        assert V.shape == (n_d1, n_d2)
-        return V
-
-    def eps_greedy_action(self, state):
-        i, j = state
-        N_state = np.sum(self.N[i, j])
-        eps_t = self.N0/(self.N0 + N_state)
-        if random.random() < eps_t:
-            # pick random action
-            if random.random() < 0.5:
-                return "hit", ACTION_SPACE.actions_to_int["hit"]
-            else:
-                return "stick", ACTION_SPACE.actions_to_int["stick"]
-        else:
-            # pick greedy action
-            int_action = np.argmax(self.Q[i, j])
-            return ACTION_SPACE.int_to_actions[int_action], int_action
-
-    def train_agent(self, episodes):
+    def train_agent(self, episodes, **kwargs):
         count_wins, count_loss, count_tie = 0, 0, 0
         if self.log:
             print(f"logging to {self.log_path}")
