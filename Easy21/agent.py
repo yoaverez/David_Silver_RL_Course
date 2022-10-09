@@ -58,3 +58,15 @@ class Agent:
         z = np.transpose(self.Q[1:, 1:], axes=(1, 0, 2))
 
         plot_3D(x, y, z, title=title, zlabel="Q(s,a)", titles=["Q(s,a=hit)", "Q(s,a=stick)"], single_plot=single_plot)
+
+    def set_log_path(self, log_path):
+        if log_path == "":
+            self.log = False
+            self.log_path = log_path
+        else:
+            self.log = True
+            self.log_path = log_path
+
+    def reset(self):
+        self.N = np.zeros(shape=(CARDS_NUM + 1, LEGAL_SUM_FIELD + 1, NUM_OF_ACTIONS))  # (state, action)
+        self.Q = np.zeros_like(self.N)
