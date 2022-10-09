@@ -8,16 +8,15 @@ import random
 
 class SarsaControlAgent(Agent):
 
-    def __init__(self, N0=100, discount=1, lambda_=0, log_path=''):
+    def __init__(self, N0=100, discount=1, log_path='', **kwargs):
 
         super().__init__(N0, log_path)
 
         self.gamma = discount
-        self.lambda_ = lambda_
 
         self.eligibility_traces = np.zeros_like(self.N)
 
-    def train_agent(self, episodes, **kwargs):
+    def train_agent(self, episodes, lambda_=0, **kwargs):
         count_wins, count_loss, count_tie = 0, 0, 0
         if self.log:
             print(f"logging to {self.log_path}")
@@ -52,11 +51,11 @@ class SarsaControlAgent(Agent):
                 #     for j, cols in enumerate(rows):
                 #         for a, _ in enumerate(cols):
                 #             self.Q[i, j, a] += alpha_t*delta_t*self.eligibility_traces[i, j, a]
-                #             self.eligibility_traces[i, j, a] *= self.gamma * self.lambda_
+                #             self.eligibility_traces[i, j, a] *= self.gamma * lambda_
 
                 # alternative more fast update
                 self.Q += alpha_t*delta_t*self.eligibility_traces
-                self.eligibility_traces *= self.gamma * self.lambda_
+                self.eligibility_traces *= self.gamma * lambda_
 
                 # update log
                 if self.log and episodes - episode <= 100:

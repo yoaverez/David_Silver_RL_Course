@@ -5,7 +5,7 @@ import numpy as np
 
 
 class Agent:
-    def __init__(self, N0=100, log_path=''):
+    def __init__(self, N0=100, log_path='', **kwargs):
         self.log = False if log_path == '' else True
         self.log_path = log_path
         if self.log:

@@ -6,7 +6,7 @@ import random
 
 class MCControlAgent(Agent):
 
-    def __init__(self, N0=100, log_path=''):
+    def __init__(self, N0=100, log_path='', **kwargs):
         super().__init__(N0, log_path)
 
     def train_agent(self, episodes, **kwargs):

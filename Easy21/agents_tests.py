@@ -12,12 +12,13 @@ def test_plots(agent_type='MC', episodes=1000*1000, log=False, **kwargs):
         agent = agents[agent_type](log_path=log_path, **kwargs)
     else:
         agent = agents[agent_type](**kwargs)
-    agent.train_agent(episodes)
+    agent.train_agent(episodes, **kwargs)
     agent.plot_value_function(f"value function after {int(episodes/size[0])}{size[1]} episodes")
     agent.plot_action_value_function(f"action-value function after {int(episodes/size[0])}{size[1]} episodes")
 
 
 def main():
+    # test_plots(agent_type="mc", episodes=50 * 1000)
     test_plots(agent_type="sarsa", episodes=50 * 1000, lambda_=0.2)
 
 
