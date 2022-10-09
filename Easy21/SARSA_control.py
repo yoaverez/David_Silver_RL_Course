@@ -4,6 +4,7 @@ from agent import Agent
 
 import numpy as np
 import random
+import os
 
 
 class SarsaControlAgent(Agent):
@@ -18,7 +19,7 @@ class SarsaControlAgent(Agent):
 
     def train_agent(self, episodes, lambda_=0, check_points=[], **kwargs):
         count_wins, count_loss, count_tie = 0, 0, 0
-        save_format = "NUMBER_episodes_LAMBDA.npy"
+        save_format = os.path.join("Sarsa_data", "Q_functions", "NUMBER_episodes_LAMBDA.npy")
         check_point_idx = 0
         if self.log:
             print(f"logging to {self.log_path}")
