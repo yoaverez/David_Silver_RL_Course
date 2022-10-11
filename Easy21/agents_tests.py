@@ -26,8 +26,8 @@ def test_plots(agent_type='MC', episodes=1000*1000, log=False, check_points=[], 
     agent.plot_action_value_function(f"action-value function after {int(episodes/size[0])}{size[1]} episodes")
 
 
-def run_and_save_different_lambda(agent_type='Sarsa', episodes=1000, check_points=[1000]):
-    lambdas = np.arange(0, 1.1, 0.1)  # lambda in [0.0, 0.1, 0.2, ..., 0.9, 1.0]
+def run_and_save_different_lambda(agent_type='Sarsa', episodes=1000, check_points=[1000],
+                                  lambdas=np.arange(0, 1.1, 0.1)):
     size = (1000 * 1000, 'M') if episodes >= 1e6 else (1000, 'K')
     log_path = os.path.join(f"{agent_type}_data", "logs", f"{int(episodes / size[0])}{size[1]}_episodes_LAMBDA.txt")
     q_function_path = os.path.join(f"{agent_type}_data", "Q_functions",
@@ -107,6 +107,7 @@ def test_eval(episodes=100):
 
 
 def main():
+    episodes = 1000 * 1000
     # test_plots(agent_type="MC", episodes=1000 * 1000)
     # test_plots(agent_type="Sarsa", episodes=50 * 1000, lambda_=0.2)
     # run_and_save_different_lambda()
@@ -114,10 +115,12 @@ def main():
     # plot_mse_for_different_number_of_episodes(episodes_list=np.arange(100, 10000+1, 100, dtype=int),
     #                                           train=True)
     # test_eval()
-    # run_and_save_different_lambda(agent_type="FA_sarsa")
+    # run_and_save_different_lambda(agent_type="FA_sarsa", episodes=episodes, check_points=[episodes],
+                                  lambdas=[0.2])
     # plot_mse_with_different_lambdas(agent_type="FA_sarsa")
     # plot_mse_for_different_number_of_episodes(episodes_list=np.arange(100, 10000 + 1, 100, dtype=int),
     #                                           train=True, agent_type="FA_sarsa")
+    # test_plots(agent_type="FA_sarsa", episodes=episodes, lambda_=0.2, check_points=[episodes])
 
 
 if __name__ == "__main__":
