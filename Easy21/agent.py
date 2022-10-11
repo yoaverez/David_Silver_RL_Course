@@ -30,12 +30,17 @@ class Agent:
         int_action = np.argmax(self.Q[i, j])
         return ACTION_SPACE.int_to_actions[int_action], int_action
 
-    def eps_greedy_action(self, state):
+    def eps_greedy_action(self, state, eps_t=None):
         if self.env.done:
             return "not_important", -1
         i, j = state
-        N_state = np.sum(self.N[i, j])
-        eps_t = self.N0/(self.N0 + N_state)
+        if eps_t is None:
+            N_state = np.sum(self.N[i, j])
+            eps_t = self.N0/(self.N0 + N_state)
+        elif type(eps_t) != int and type(eps_t) != float:
+            print(type(eps_t))
+            raise Exception("eps_t must be None of a number!!!")
+
         if random.random() < eps_t:
             # pick random action
             if random.random() < 0.5:
