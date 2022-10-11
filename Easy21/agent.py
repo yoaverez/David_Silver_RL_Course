@@ -25,6 +25,11 @@ class Agent:
         assert V.shape == (n_d1, n_d2)
         return V
 
+    def greedy_action(self, state):
+        i, j = state
+        int_action = np.argmax(self.Q[i, j])
+        return ACTION_SPACE.int_to_actions[int_action], int_action
+
     def eps_greedy_action(self, state):
         if self.env.done:
             return "not_important", -1
@@ -39,11 +44,53 @@ class Agent:
                 return "stick", ACTION_SPACE.actions_to_int["stick"]
         else:
             # pick greedy action
-            int_action = np.argmax(self.Q[i, j])
-            return ACTION_SPACE.int_to_actions[int_action], int_action
+            return self.greedy_action(state)
 
     def train_agent(self, episodes, **kwargs):
         raise Exception("VIRTUAL FUNCTION NOT IMPLEMENTED")
+
+    def eval(self, episodes, log_path=''):
+        log = False if log_path == '' else True
+        count_wins, count_loss, count_tie = 0, 0, 0
+        reward = 0
+        for episode in range(1, episodes+1):
+            print(f"running episode {episode}/{episodes}...")
+
+            # sampling stage:
+            state = self.env.reset()
+
+            while not self.env.done:
+                action, int_action = self.greedy_action(state)
+                new_state, reward, log_str = self.env.step(state, action)
+
+                # update log
+                s = f"dealer open card: {state[0]:3} {' ':3}{'|':3} player sum: {state[1]:3} {' ':3}{'|':3} " \
+                    f"action: {action:6} {' ':3}{'|':3} reward: {reward:3}\n"
+                if log and episodes - episode <= 100:
+                    with open(log_path, 'a', newline='\n') as f:
+                        f.write(s)
+                        f.write(log_str)
+                elif episodes - episode <= 100:
+                    print(s)
+                    print(log_str)
+
+                state = new_state
+
+            if reward > 0:
+                count_wins += 1
+            elif reward < 0:
+                count_loss += 1
+            else:
+                count_tie += 1
+
+        log_str = f"player won {count_wins} games\n" \
+                  f"player lost {count_loss} games\n" \
+                  f"{count_tie} games ended with a tie\n"
+        if log:
+            with open(log_path, 'a', newline='\n') as f:
+                f.write(log_str)
+        else:
+            print(log_str)
 
     def plot_value_function(self, title):
         x = np.arange(0, 10, 1)
@@ -70,3 +117,6 @@ class Agent:
     def reset(self):
         self.N = np.zeros(shape=(CARDS_NUM + 1, LEGAL_SUM_FIELD + 1, NUM_OF_ACTIONS))  # (state, action)
         self.Q = np.zeros_like(self.N)
+
+    def load_q(self, q_path):
+        self.Q = np.load(q_path)
