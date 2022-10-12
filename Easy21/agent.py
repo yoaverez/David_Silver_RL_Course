@@ -25,6 +25,12 @@ class Agent:
         assert V.shape == (n_d1, n_d2)
         return V
 
+    @staticmethod
+    def hit_until_17(state):
+        action = "hit" if state[1] < 17 else "stick"
+        int_action = ACTION_SPACE.actions_to_int[action]
+        return action, int_action
+
     def greedy_action(self, state):
         i, j = state
         int_action = np.argmax(self.Q[i, j])
@@ -66,6 +72,8 @@ class Agent:
 
             while not self.env.done:
                 action, int_action = self.greedy_action(state)
+                # action, int_action = self.hit_until_17(state)
+
                 new_state, reward, log_str = self.env.step(state, action)
 
                 # update log

@@ -106,6 +106,14 @@ def test_eval(episodes=100):
     agent.eval(episodes, log_path=log_path)
 
 
+def test_hit_until_17_policy(episodes=1000*1000):
+    agent = SarsaControlAgent()
+    q_path = os.path.join("Sarsa_data", "Q_functions", "1M_episodes_lambda_1.0.npy")
+    log_path = os.path.join("Sarsa_data", "logs", "test_eval_until_17_policy.txt")
+    agent.load_q(q_path)
+    agent.eval(episodes, log_path=log_path)
+
+
 def main():
     episodes = 1000 * 1000
     # test_plots(agent_type="MC", episodes=1000 * 1000)
@@ -116,11 +124,13 @@ def main():
     #                                           train=True)
     # test_eval()
     # run_and_save_different_lambda(agent_type="FA_sarsa", episodes=episodes, check_points=[episodes],
-                                  lambdas=[0.2])
+    #                               lambdas=[0.2])
     # plot_mse_with_different_lambdas(agent_type="FA_sarsa")
     # plot_mse_for_different_number_of_episodes(episodes_list=np.arange(100, 10000 + 1, 100, dtype=int),
     #                                           train=True, agent_type="FA_sarsa")
     # test_plots(agent_type="FA_sarsa", episodes=episodes, lambda_=0.2, check_points=[episodes])
+    # test_hit_until_17_policy()
+    # test_eval(episodes=1000*1000)
 
 
 if __name__ == "__main__":
